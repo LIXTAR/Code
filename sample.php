@@ -5,7 +5,7 @@
 		//Подключение к базе данных
 		$mysql_host	="xoxoxox";
 		$mysql_user	="xoxoxox";
-		$mysql_passw="xoxoxox";
+		$mysql_passw	="xoxoxox";
 		$mysql_conn=mysql_connect($mysql_host,$mysql_user,$mysql_passw) or die(mysql_error());
 		mysql_query("SET NAMES 'utf8'"); 
 		mysql_query("SET CHARACTER SET 'utf8'");
@@ -47,7 +47,7 @@
 		//Подключение к базе данных
 		$mysql_host	="xoxoxox";
 		$mysql_user	="xoxoxox";
-		$mysql_passw="xoxoxox";
+		$mysql_passw	="xoxoxox";
 		$mysql_conn=mysql_connect($mysql_host,$mysql_user,$mysql_passw) or die(mysql_error());
 		mysql_query("SET NAMES 'utf8'"); 
 		mysql_query("SET CHARACTER SET 'utf8'");
