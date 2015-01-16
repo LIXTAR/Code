@@ -19,8 +19,8 @@
 		$num_rows_for_id=mysql_num_rows($result_for_id);
 		$num_rows_for_login=mysql_num_rows($result_for_login);
 
-		if($num_rows_for_id>0) $errorcode=-1;//Код -1 - в базе уже есть пользователь с введенным ИНН
-		else if($num_rows_for_login>0) $errorcode=-2;//Код -2 - в базе уже есть пользователь с таким логином
+		if($num_rows_for_id>0) {$errorcode=-1;}//Код -1 - в базе уже есть пользователь с введенным ИНН
+		else if($num_rows_for_login>0) {$errorcode=-2;}//Код -2 - в базе уже есть пользователь с таким логином
 		mysql_close($mysql_conn);
 		return $errorcode;
 	}
