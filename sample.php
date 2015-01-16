@@ -53,11 +53,8 @@
 		mysql_query("SET CHARACTER SET 'utf8'");
 		mysql_query("SET SESSION collation_connection = 'utf8_general_ci'");
 
-		if($user['xoxoxox']==9){
-			$query="INSERT INTO xoxoxox VALUES('".$user['xoxoxox']."','".$user['xoxoxox']." ".$user['xoxoxox']."','"."db_".$user['xoxoxox']."','".$user['xoxoxox']."','".$user['xoxoxox']."','".$user['xoxoxox']."','".$user['xoxoxox']."','".$user['xoxoxox']."','".$user['xoxoxox']."');";
-		}else{
-			$query="INSERT INTO xoxoxox VALUES('".$user['xoxoxox']."','".$user['xoxoxox']."','"."db_".$user['xoxoxox']."','".$user['xoxoxox']."','".$user['xoxoxox']."','".$user['xoxoxox']."','".$user['xoxoxox']."','".$user['xoxoxox']."','".$user['xoxoxox']."');";
-		}
+		$query="INSERT INTO xoxoxox VALUES('".$user['xoxoxox']."','".$user['xoxoxox']." ".$user['xoxoxox']."','"."db_".$user['xoxoxox']."','".$user['xoxoxox']."','".$user['xoxoxox']."','".$user['xoxoxox']."','".$user['xoxoxox']."','".$user['xoxoxox']."','".$user['xoxoxox']."');";
+	
 		mysql_query($query);
 		mysql_close($mysql_conn);
 	}
